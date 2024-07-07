@@ -2,16 +2,18 @@
 
 ## I. Clone Repository
 
-    clone this repository
+    > clone this repository
 
 ## II. Setup Database Server
 
-    Download and setup mongodb server in local
+    > Download and setup mongodb server in local
 
 ## II. Run Backend
 
-    1. navigate to backend directory **cd backend**
-    2. install npm packages **npm install**
+    > 1. navigate to backend directory 
+    cd backend
+    > 2. install npm packages 
+    npm install
     3. Update the MongoServer url and database name in **/backend/db.js**
     4. run server **node server.js**
     5. your server will be running on localhost:4000 post
