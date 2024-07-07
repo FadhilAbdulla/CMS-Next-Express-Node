@@ -1,0 +1,145 @@
+/* components/PageHeader.module.css */
+.header {
+  width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    color: #333; /* Text color */
+  }
+  
+  .searchButton {
+    background-color: #333; /* Darker button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .searchButton:hover {
+    background-color: #555; /* Darker hover color */
+  }
+  
+  .filter {
+    position: relative;
+  }
+  
+  .filterButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 10px;
+    color: #000; /* Black icon color */
+  }
+  
+  .filterIcon {
+
+  }
+  
+  .filterOptions {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+    display: none;
+  }
+  
+  .filter.expanded .filterOptions {
+    display: block;
+  }
+  
+  .settings {
+    position: relative;
+  }
+  
+  .settingsButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 10px;
+    color: #000; /* Black icon color */
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .settingsButton.open {
+    transform: rotate(90deg);
+  }
+  
+  .settingsIcon {
+    font-size: 18px;
+  }
+  
+  .settingsOptions {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+    display: none;
+    width: 180px; /* Increased width to accommodate two lines of text */
+  }
+  
+  .settingsButton.open + .settingsOptions {
+    display: block;
+  }
+  
+  .optionButton {
+    background-color: #fff;
+    width: 100%;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .optionButton:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .optionIcon {
+    margin-right: 5px;
+  }
+  

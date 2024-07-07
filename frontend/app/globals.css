@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/fonts/my-custom-font.woff2') format('woff2'),
+       url('/fonts/my-custom-font.woff') format('woff');
+  /* Add additional font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* }
+ff66ff
+8033ff */
+body {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255)
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.MainPagedesign {
+  padding: 20px;
+}
+.BlockPageHeading{
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.PostTitle{
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: rgb(12, 2, 48);
+}
+.PostBody{
+ padding-top: 10px;
+ color: rgb(0, 0, 0);
+}
+.mt-8{
+  margin-top: 20px;
+}
+.CommentPageHeading{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-decoration-line: underline;
+  color: rgb(239, 255, 231);
+}
+.IndividualPostTitle{
+  font-size: 40px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-align: center;
+  color: rgb(188, 255, 152);
+  
+
+}
+
+.IndividualPostBody{
+  padding-top: 10px;
+  font-size: 25px;
+  color: rgb(203, 255, 199);
+ }
+
+ .CommentTitle{
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  padding-top: 10px;
+  color: rgb(22, 62, 0);
+ }
+ .CommentEmail{
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-family: 'MyCustomFont', Arial, sans-serif;
+  padding-top: 10px;
+  color: rgb(0, 0, 0);
+ }
+ .CommentBody{
+  padding-top: 10px;
+  color: rgb(22, 1, 46);
+ }
+ .BlogButton {
+  background-color: black;
+  border-radius: 5px;
+  border: 1 ;
+  font-size: 13px;
+  color: blanchedalmond;
+padding: 8px;
+margin-right: 8px;
+font-weight: 600;
+ }

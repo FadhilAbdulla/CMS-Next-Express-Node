@@ -1,0 +1,70 @@
+/* src/components/CustomerTable.css */
+.customer-table {
+    width: 97%;
+    border-collapse: collapse;
+    margin: 20px ;
+  }
+  
+  .customer-table th, .customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .customer-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  @media (max-width: 600px) {
+    .customer-table, .customer-table thead, .customer-table tbody, .customer-table th, .customer-table td, .customer-table tr {
+      display: block;
+    }
+  
+    .customer-table tr {
+      margin-bottom: 15px;
+    }
+  
+    .customer-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .customer-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
+  .ActionButtonConatiner {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .likeButton.liked {
+    color: red;
+  }
+  
+
+  .actionButton {
+    background-color: #f0f0f0; /* Background color */
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    color: #333; /* Icon color */
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    
+  }
+  
+  .actionButton:hover {
+    background-color: #333; /* Dark background on hover */
+    color: #fff; /* White icon color on hover */
+    transform: scale(1.1);
+  }

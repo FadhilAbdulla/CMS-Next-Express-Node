@@ -1,0 +1,121 @@
+/* components/SignIn.module.css */
+.signInContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #0070f3;
+  }
+  
+  .passwordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .passwordToggle {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #0070f3;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s;
+  }
+  
+  .passwordToggle:hover {
+    color: #005bb5;
+  }
+  
+  .signInButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #0070f3;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .signInButton:hover {
+    background: #005bb5;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .BelowTextContainer {
+    margin-top: 10px;
+    display : flex ;
+    justify-content : center;
+  }
+
+  .NormalBelowtext {
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .SignUpBelowtext {
+    padding-left: 5px;
+    font-size: 12px;
+    color: #0070f3;
+    cursor: pointer;
+  }
+  .SignUpBelowtext:hover {
+    color: #005bb5;
+  }
