@@ -1,4 +1,7 @@
+> this is a Customer management Portal build on Node, Express,MongoDB,NextJs
+
 # Steps to run this project
+
 
 ## I. Clone Repository
 
